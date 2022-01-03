@@ -198,6 +198,14 @@ class ScanView @JvmOverloads constructor(
         this.listener = listener
     }
 
+    fun openTorch() {
+        camera?.cameraControl?.enableTorch(true)
+    }
+
+    fun closeTorch() {
+        camera?.cameraControl?.enableTorch(false)
+    }
+
     companion object {
         private const val TAG = "SCAN_VIEW"
         private const val RATIO_4_3_VALUE = 4.0 / 3.0
