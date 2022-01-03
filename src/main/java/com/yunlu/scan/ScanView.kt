@@ -121,7 +121,7 @@ class ScanView @JvmOverloads constructor(
                     .addOnSuccessListener { barcodes ->
                         if (barcodes.isNotEmpty()) {
                             val barcode = barcodes[0]
-                            val overlay = children.firstOrNull { it is IScanOverlay }
+                            val overlay = children.firstOrNull { it is AbsScanOverlay }
                             if (overlay == null) {
                                 listener?.onScan(barcode.rawValue)
                             } else {

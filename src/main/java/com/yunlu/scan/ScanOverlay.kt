@@ -10,7 +10,7 @@ import android.view.animation.DecelerateInterpolator
 
 class ScanOverlay @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
-) : IScanOverlay(context, attrs) {
+) : AbsScanOverlay(context, attrs) {
     private val vertexPaint = Paint().apply {
         strokeWidth = 2f
         color = Color.WHITE

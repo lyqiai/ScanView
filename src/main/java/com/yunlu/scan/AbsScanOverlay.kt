@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.view.View
 import kotlin.math.min
 
-open class IScanOverlay @JvmOverloads constructor(
+open class AbsScanOverlay @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
